@@ -29,7 +29,9 @@
                 <!-- form start -->
                       <form method="POST" action='{{ url('pegawai/edituser/'. $pegawai->id) }}' enctype="multipart/form-data" >                    
                         @csrf
-                        <div class="form-group">
+               
+                        <div class="card-body">
+                            <div class="form-group">
                               <label for="foto">Foto</label><br>
                               <img src="{{ asset('image/' . $pegawai->foto) }}" alt="Product Image" style="height:100px;width:100px;">
                               <div class="input-group">
@@ -39,18 +41,17 @@
                                 </div>
                               </div>
                             </div>
-                        <div class="card-body">
                             <div class="form-group">
                                 <label for="nama">Nama</label>
                                 <input type="text" class="form-control" id="nama" value="{{$pegawai->pegawai_nama}}" name="nama">
                             </div>
                             <div class="form-group">
-                                <label for="nomor">Umur</label>
+                                <label for="umur">Umur</label>
                                 <input type="text" class="form-control" id="umur" value="{{$pegawai->pegawai_umur}}" name="umur">
                             </div>
                             <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="alamat" value="{{$pegawai->alamat}}" name="alamat">
+                                <label for="alamat">Alamat</label>
+                                <input type="text" class="form-control" id="alamat" value="{{$pegawai->pegawai_alamat}}" name="alamat">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>

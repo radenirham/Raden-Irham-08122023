@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 use illuminate\Support\Facades\File;
 
 class PegawaiController extends Controller
@@ -15,7 +16,7 @@ class PegawaiController extends Controller
     public function index(request $request)
     {
         $pegawai = User::all();
-        return view('pegawai.index',compact('pegawai','keyword'));
+        return view('pegawai.index',compact('pegawai'));
     }
 
     /**

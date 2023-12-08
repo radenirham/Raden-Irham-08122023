@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="umur" class="form-control" name="umur" placeholder="NUmur">
+          <input type="umur" class="form-control" name="umur" placeholder="Umur">
           <div class="input-group-append">
             <div class="input-group-text">
               
@@ -44,7 +44,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="sim" class="form-control" name="alamat" placeholder="alamat">
+          <input type="alamat" class="form-control" name="alamat" placeholder="Alamat">
           <div class="input-group-append">
             <div class="input-group-text">
               
